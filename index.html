@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="agd-partner-manual-verification" />
-　<meta name="awin-verification" content="Awin" />
+  　
+  <meta name="awin-verification" content="Awin" />
   <title>TravelWeever | 旅程を自動生成する次世代トラベルプランナー</title>
-  <meta name="description" content="TravelWeever は行き先・日付・予算を入力するだけで、観光地・ホテル・移動手段を最適化した旅程を自動生成。地図表示、保存・共有にも対応。Nuxt + Supabase ベース。" />
+  <meta name="description"
+    content="TravelWeever は行き先・日付・予算を入力するだけで、観光地・ホテル・移動手段を最適化した旅程を自動生成。地図表示、保存・共有にも対応。Nuxt + Supabase ベース。" />
   <meta name="keywords" content="旅行, 旅程, トラベル, 観光, 旅の計画, 旅行アプリ, ホテル検索, ルート計算, Nuxt, Supabase" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <link rel="canonical" href="https://uchiyamaryoto.github.io/travelWeeverDemo/" />
@@ -38,8 +41,8 @@
           fontFamily: { sans: ['\"Noto Sans JP\"', 'ui-sans-serif', 'system-ui'] },
           colors: {
             brand: {
-              50: '#ecfeff', 100:'#cffafe', 200:'#a5f3fc', 300:'#67e8f9', 400:'#22d3ee',
-              500:'#06b6d4', 600:'#0891b2', 700:'#0e7490', 800:'#155e75', 900:'#164e63'
+              50: '#ecfeff', 100: '#cffafe', 200: '#a5f3fc', 300: '#67e8f9', 400: '#22d3ee',
+              500: '#06b6d4', 600: '#0891b2', 700: '#0e7490', 800: '#155e75', 900: '#164e63'
             }
           }
         }
@@ -47,7 +50,9 @@
     }
   </script>
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 
   <!-- JSON-LD: SoftwareApplication -->
@@ -64,19 +69,22 @@
   }
   </script>
 </head>
+
 <body class="font-sans text-slate-800">
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
       <a href="#top" class="flex items-center gap-2">
-        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold">TW</span>
+        <span
+          class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold">TW</span>
         <span class="text-lg font-semibold">TravelWeever</span>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
         <a href="#features" class="hover:text-brand-600">特徴</a>
         <a href="#how" class="hover:text-brand-600">使い方</a>
         <a href="#faq" class="hover:text-brand-600">FAQ</a>
-        <a href="#cta" class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700">今すぐ試す</a>
+        <a href="#cta"
+          class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700">今すぐ試す</a>
       </nav>
     </div>
   </header>
@@ -90,30 +98,47 @@
         </h1>
         <p class="mt-4 text-lg text-slate-600">行き先・日付・予算を入力すると、観光地・ホテル・移動をまとめて最適化。地図上で旅程を確認・保存・共有できます。</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-          <a href="#cta" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700">
+          <a href="#cta"
+            class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700">
             無料で試す
           </a>
-          <a href="#features" class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-slate-50">
+          <a href="#features"
+            class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-slate-50">
             機能を見る
           </a>
         </div>
         <ul class="mt-6 text-sm text-slate-500 grid grid-cols-2 gap-3">
           <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>地図上で可視化</li>
-          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>ホテル・フライト連携（予定）</li>
+          <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>ホテル・フライト連携（予定）
+          </li>
           <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>保存・共有リンク</li>
           <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>スマホ最適化</li>
         </ul>
       </div>
-      <div class="relative">
-        <div class="aspect-[16/10] rounded-2xl border shadow-sm bg-gradient-to-br from-sky-50 to-white flex items-center justify-center">
-          <div class="text-center p-6">
-            <p class="text-sm text-slate-500">（ここにアプリのスクリーンショットやデモGIFを配置）</p>
-            <div class="mt-4 grid grid-cols-3 gap-3">
-              <div class="rounded-xl border p-3 text-xs">検索</div>
-              <div class="rounded-xl border p-3 text-xs">地図</div>
-              <div class="rounded-xl border p-3 text-xs">旅程</div>
-            </div>
-          </div>
+      <div class="relative" id="tw-slider" data-interval="4000">
+        <div class="relative aspect-[16/10] rounded-2xl border shadow-sm overflow-hidden bg-white">
+          <!-- slides -->
+          <img src="images/image1.png" alt="TravelWeever スクリーンショット 1"
+            class="tw-slide absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700" />
+          <img src="images/image2.png" alt="TravelWeever スクリーンショット 2"
+            class="tw-slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700" />
+        </div>
+
+        <!-- controls -->
+        <button type="button" aria-label="前へ"
+          class="tw-prev absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white p-2 shadow border">
+          ‹
+        </button>
+        <button type="button" aria-label="次へ"
+          class="tw-next absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white p-2 shadow border">
+          ›
+        </button>
+
+        <!-- indicators -->
+        <div class="tw-dots absolute -bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          <button class="tw-dot h-2.5 w-2.5 rounded-full bg-slate-300 aria-[current=true]:bg-brand-600"
+            aria-current="true"></button>
+          <button class="tw-dot h-2.5 w-2.5 rounded-full bg-slate-300 aria-[current=true]:bg-brand-600"></button>
         </div>
       </div>
     </div>
@@ -170,17 +195,20 @@
       <h2 class="text-2xl md:text-3xl font-bold">使い方</h2>
       <ol class="mt-6 grid md:grid-cols-3 gap-6">
         <li class="rounded-2xl border bg-white p-6">
-          <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">1</span>
+          <span
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">1</span>
           <h3 class="mt-3 font-semibold">条件を入力</h3>
           <p class="mt-1 text-sm text-slate-600">行き先・日付・人数・予算、フライト条件など。</p>
         </li>
         <li class="rounded-2xl border bg-white p-6">
-          <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">2</span>
+          <span
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">2</span>
           <h3 class="mt-3 font-semibold">プランを生成</h3>
           <p class="mt-1 text-sm text-slate-600">観光地・ホテル・移動を自動で最適化。</p>
         </li>
         <li class="rounded-2xl border bg-white p-6">
-          <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">3</span>
+          <span
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">3</span>
           <h3 class="mt-3 font-semibold">保存・共有</h3>
           <p class="mt-1 text-sm text-slate-600">地図と一緒に旅程を確認し、URL を友だちと共有。</p>
         </li>
@@ -190,19 +218,20 @@
 
   <!-- CTA -->
   <section id="cta" class="py-16 md:py-24">
-  <div class="mx-auto max-w-4xl px-4 text-center">
-    <h2 class="text-2xl md:text-3xl font-bold">今すぐ TravelWeever を試す</h2>
-    <p class="mt-2 text-slate-600">初期リリースでは検索 → 旅程保存の完走率向上に注力しています。</p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#" class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700">デモを見る</a>
-      <a href="https://app.travelweever.com" target="_blank" rel="noopener"
-         class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-slate-50">
-        アプリを開く
-      </a>
+    <div class="mx-auto max-w-4xl px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold">今すぐ TravelWeever を試す</h2>
+      <p class="mt-2 text-slate-600">初期リリースでは検索 → 旅程保存の完走率向上に注力しています。</p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#"
+          class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700">デモを見る</a>
+        <a href="https://app.travelweever.com" target="_blank" rel="noopener"
+          class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-slate-50">
+          アプリを開く
+        </a>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">※ スクリーンショット / デモ動画を準備中です。</p>
     </div>
-    <p class="mt-4 text-xs text-slate-500">※ スクリーンショット / デモ動画を準備中です。</p>
-  </div>
-</section>
+  </section>
 
   <!-- FAQ -->
   <section id="faq" class="bg-slate-50 py-16 md:py-24 border-t">
@@ -236,8 +265,10 @@
       <p class="mt-2 text-slate-600">メールアドレスを登録すると、アップデートや招待をお届けします。</p>
       <form class="mt-6 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-3 max-w-xl mx-auto" action="#" method="post">
         <label class="sr-only" for="email">メールアドレス</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" class="w-full rounded-xl border px-4 py-3">
-        <button type="submit" class="rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700">登録</button>
+        <input id="email" name="email" type="email" required placeholder="you@example.com"
+          class="w-full rounded-xl border px-4 py-3">
+        <button type="submit"
+          class="rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700">登録</button>
       </form>
       <p class="mt-3 text-xs text-slate-500">スパムは送りません。解除はいつでも可能です。</p>
     </div>
@@ -248,18 +279,19 @@
     <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
       <div>
         <div class="flex items-center gap-2">
-          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold">TW</span>
+          <span
+            class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold">TW</span>
           <span class="font-semibold">TravelWeever</span>
         </div>
         <p class="mt-3 text-slate-500">旅の計画を、もっとかんたんに。</p>
       </div>
-<nav class="grid gap-2">
-  <a href="#features" class="hover:text-brand-600">特徴</a>
-  <a href="#how" class="hover:text-brand-600">使い方</a>
-  <a href="#faq" class="hover:text-brand-600">FAQ</a>
-  <a href="terms.html" class="hover:text-brand-600">利用規約</a>
-  <a href="privacy.html" class="hover:text-brand-600">プライバシーポリシー</a>
-</nav>
+      <nav class="grid gap-2">
+        <a href="#features" class="hover:text-brand-600">特徴</a>
+        <a href="#how" class="hover:text-brand-600">使い方</a>
+        <a href="#faq" class="hover:text-brand-600">FAQ</a>
+        <a href="terms.html" class="hover:text-brand-600">利用規約</a>
+        <a href="privacy.html" class="hover:text-brand-600">プライバシーポリシー</a>
+      </nav>
       <div class="text-slate-500">
         <p>© <span id="y"></span> TravelWeever</p>
       </div>
@@ -284,5 +316,63 @@
     // Year
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
+
+  <script>
+    (function () {
+      const root = document.getElementById('tw-slider');
+      if (!root) return;
+
+      const slides = Array.from(root.querySelectorAll('.tw-slide'));
+      const dots = Array.from(root.querySelectorAll('.tw-dot'));
+      const prev = root.querySelector('.tw-prev');
+      const next = root.querySelector('.tw-next');
+      const interval = Number(root.dataset.interval || 4000);
+
+      let i = 0, timer = null;
+
+      function show(n) {
+        i = (n + slides.length) % slides.length;
+        slides.forEach((el, idx) => {
+          el.style.opacity = (idx === i) ? '1' : '0';
+          el.style.zIndex = (idx === i) ? '1' : '0';
+        });
+        dots.forEach((d, idx) => {
+          d.setAttribute('aria-current', String(idx === i));
+        });
+      }
+
+      function start() {
+        stop();
+        timer = setInterval(() => show(i + 1), interval);
+      }
+
+      function stop() {
+        if (timer) { clearInterval(timer); timer = null; }
+      }
+
+      // init
+      show(0);
+      start();
+
+      // controls
+      prev.addEventListener('click', () => { show(i - 1); start(); });
+      next.addEventListener('click', () => { show(i + 1); start(); });
+      dots.forEach((d, idx) => d.addEventListener('click', () => { show(idx); start(); }));
+
+      // 一時停止（ホバー/フォーカス）
+      root.addEventListener('mouseenter', stop);
+      root.addEventListener('mouseleave', start);
+      root.addEventListener('focusin', stop);
+      root.addEventListener('focusout', start);
+
+      // キーボード操作（左右キー）
+      root.tabIndex = 0;
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') { show(i - 1); start(); }
+        if (e.key === 'ArrowRight') { show(i + 1); start(); }
+      });
+    })();
+  </script>
 </body>
+
 </html>
