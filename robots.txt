@@ -1,3 +1,10 @@
+# TravelWeever robots.txt
 User-agent: *
+Disallow:
 Allow: /
-Sitemap: https://uchiyamaryoto.github.io/travelWeeverDemo/sitemap.xml
+
+# Main site (LP)
+Sitemap: https://www.travelweever.com/sitemap.xml
+
+# Web application (公開プラン含む)
+Sitemap: https://app.travelweever.com/sitemap.xml
