@@ -1,48 +1,38 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="agd-partner-manual-verification" />
   <meta name="awin-verification" content="Awin" />
-
-  <title>TravelWeever | 旅程を自動生成する次世代トラベルプランナー</title>
-
+  <title>TravelWeever | 旅のプランを自動作成する複数都市対応トラベルプランナー</title>
   <meta name="description"
-    content="TravelWeever は行き先・日付・予算を入力するだけで、観光地・ホテル・移動手段を最適化した旅程を自動生成。地図表示、保存・共有にも対応する次世代トラベルプランナーです。" />
-  <meta name="keywords"
-    content="旅行, 旅程, 旅行プラン, モデルコース, 旅程表, 観光プラン, 旅行スケジュール, 旅行アプリ, 旅程 自動生成, 旅行計画 アプリ" />
-
+    content="行き先・日付・予算を入れるだけで、AIが旅程を自動作成。観光スポット・ホテル・グルメ・移動ルート・都市間の移動日まで含めて、現実的な順番で並んだ日別タイムラインを提案します。" />
+  <meta name="keywords" content="旅程 自動作成, 旅行, 旅程, 旅行プラン, 複数都市 旅行, モデルコース, 旅行スケジュール 自動, 旅行アプリ, ヨーロッパ周遊, 旅行計画 アプリ" />
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-
-  <!-- 正規URLはwww.travelweever.com -->
   <link rel="canonical" href="https://www.travelweever.com/" />
-
   <meta name="theme-color" content="#0ea5e9" />
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="TravelWeever" />
-  <meta property="og:title" content="TravelWeever | 旅程を自動生成する次世代トラベルプランナー" />
+  <meta property="og:site_name" content="TravelWeever | 旅のプランを自動作成する複数都市対応トラベルプランナー" />
   <meta property="og:description"
-    content="行き先・日付・予算から最適な旅程を30秒で自動生成。観光地・ホテル・移動ルートまでまとめて提案し、地図で確認・保存・共有できます。" />
+    content="行き先・日付・予算を入れるだけで、旅程を自動作成。観光スポット・ホテル・グルメ・移動ルート・都市間の移動日まで含めて、現実的な順番で並んだ日別タイムラインを提案します。" />
   <meta property="og:url" content="https://www.travelweever.com/" />
   <meta property="og:image" content="https://www.travelweever.com/ogp.jpg" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="TravelWeever | 旅程を自動生成する次世代トラベルプランナー" />
+  <meta name="twitter:title" content="TravelWeever | 旅のプランを自動作成する複数都市対応トラベルプランナー" />
   <meta name="twitter:description"
-    content="行き先・日付・予算を入れるだけ。観光スポット・ホテル・移動手段を最適化した旅程を自動生成。" />
+    content="行き先・日付・予算を入れるだけで、旅程を自動作成。観光スポット・ホテル・グルメ・移動ルート・都市間の移動日まで含めて、現実的な順番で並んだ日別タイムラインを提案します。" />
+
   <meta name="twitter:image" content="https://www.travelweever.com/ogp.jpg" />
   <meta name="twitter:site" content="@travelweever" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -78,28 +68,33 @@
 
   <!-- JSON-LD: SoftwareApplication / WebApplication -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "TravelWeever",
+  "alternateName": [
+    "TravelWeever 旅程自動作成ツール",
+    "AI旅程自動作成アプリ"
+  ],
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "All",
+  "description": "行き先・日付・予算から旅程を自動作成するトラベルプランナー。観光スポット、ホテル、レストラン、都市間の移動日程まで日別タイムラインにして保存・共有できます。",
+  "url": "https://www.travelweever.com/",
+  "publisher": {
+    "@type": "Organization",
     "name": "TravelWeever",
-    "applicationCategory": "TravelApplication",
-    "operatingSystem": "All",
-    "description": "行き先・日付・予算から最適な旅程を30秒で自動生成するトラベルプランナー。観光スポット、ホテル、移動経路を地図つきで提案し、保存・共有も可能です。",
-    "url": "https://www.travelweever.com/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "TravelWeever",
-      "url": "https://www.travelweever.com/"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "JPY"
-    }
+    "url": "https://www.travelweever.com/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "JPY"
   }
-  </script>
+}
+</script>
 
-  <!-- JSON-LD: FAQPage (構造化データでよくある質問を検索結果に出す用) -->
+
+  <!-- JSON-LD: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -110,7 +105,7 @@
         "name": "無料で使えますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "はい。現時点では無料でお試しいただけます。将来的に有料プランを導入する場合は事前にお知らせします。"
+          "text": "はい。基本機能は無料プランでお試しいただけます。人気スポットの高精度サジェストなど一部の高機能は、今後Proプランとして提供予定です。"
         }
       },
       {
@@ -118,7 +113,7 @@
         "name": "どの地図を使っていますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "MapLibre を使用し、ルート探索や所要時間の表示に対応します。"
+          "text": "MapLibre を使用し、移動距離や所要時間をマップ上で確認できます。都市間の移動日もタイムライン化されます。"
         }
       },
       {
@@ -126,7 +121,7 @@
         "name": "ログインしなくても使えますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "トップページからお試し利用が可能です。保存機能はログイン後にご利用ください。"
+          "text": "簡易プランはログインなしでも生成できます。保存や、あとから同じプランを地図つきで見返すにはログインが必要です。"
         }
       },
       {
@@ -134,12 +129,17 @@
         "name": "ホテルやフライトの予約はできますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "提携サイトへのリンクで予約導線を提供予定です。"
+          "text": "今後、表示されたホテルやフライト候補から外部提携サイトで予約できる導線を提供予定です。"
         }
       }
     ]
   }
   </script>
+  <!-- UPDATE: FAQを実装仕様に沿った言い回しへ。
+       - 無料/Pro
+       - ログインなしプラン生成はOKだが保存は要ログイン
+       - 都市間の移動もマップ表示
+  -->
 </head>
 
 <body class="font-sans text-slate-800">
@@ -147,8 +147,7 @@
   <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
     <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
       <a href="#top" class="flex items-center gap-2">
-        <span
-          class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold"
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold"
           aria-hidden="true">TW</span>
         <span class="text-lg font-semibold">TravelWeever</span>
       </a>
@@ -157,10 +156,8 @@
         <a href="#how" class="hover:text-brand-600">使い方</a>
         <a href="#sample" class="hover:text-brand-600">サンプル旅程</a>
         <a href="#faq" class="hover:text-brand-600">FAQ</a>
-        <a
-          href="#cta"
-          class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700"
-        >今すぐ試す</a>
+        <a href="#cta"
+          class="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-white font-semibold hover:bg-brand-700">無料で試す</a>
       </nav>
     </div>
   </header>
@@ -170,148 +167,134 @@
     <div class="mx-auto max-w-7xl px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
       <div>
         <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
-          旅の計画、<span class="text-brand-600">入力 30 秒</span>で完成。
+          旅の計画、<span class="text-brand-600">行き先と日付を入れるだけ。</span>
         </h1>
+
         <p class="mt-4 text-lg text-slate-600">
-          行き先・日付・予算を入力すると、観光地・ホテル・移動ルートまで自動で最適化。
-          地図上で旅程を確認し、そのまま保存・共有できます。
+          TravelWeever は、観光スポット・ホテル・食事・移動ルートを自動で並べて
+          <strong class="font-semibold text-slate-800">日ごとのタイムライン</strong>を作ります。
+          <br />1都市旅行はもちろん、
+          <strong class="font-semibold text-slate-800">ウィーン→プラハ→ブダペスト</strong>のような
+          複数都市の周遊プランにも対応します。
+        </p>
+        <p class="mt-2 text-xs text-slate-500">
+          ※ 現在ベータ版のため、一部の動作や表示は随時改善中です。
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-          <a
-            href="#cta"
-            class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700"
-          >
+          <a href="#cta"
+            class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700">
             無料で試す
           </a>
-          <a
-            href="#features"
-            class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-slate-50"
-          >
+          <a href="#features"
+            class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-slate-50">
             機能を見る
           </a>
         </div>
 
         <ul class="mt-6 text-sm text-slate-500 grid grid-cols-2 gap-3">
           <li class="flex items-center gap-2">
-            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>地図上で可視化
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>地図とタイムラインを同時表示
           </li>
           <li class="flex items-center gap-2">
-            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>ホテル・フライト連携（予定）
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>複数都市・長距離移動も自動で日割り
           </li>
           <li class="flex items-center gap-2">
-            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>保存・共有リンク
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>URL共有・あとから再編集
           </li>
           <li class="flex items-center gap-2">
-            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>スマホ最適化
+            <span class="h-1.5 w-1.5 rounded-full bg-brand-500"></span>人気スポットの自動ピックアップ（Pro版のみ）
           </li>
         </ul>
       </div>
 
+      <!-- スライダーエリアはそのまま -->
       <div class="relative" id="tw-slider" data-interval="4000">
         <div class="relative aspect-[16/10] rounded-2xl border shadow-sm overflow-hidden bg-white">
           <!-- slides -->
-          <img
-            src="images/image1.png"
-            alt="TravelWeever 旅程プラン生成画面のスクリーンショット"
-            class="tw-slide absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700"
-          />
-          <img
-            src="images/image2.png"
-            alt="TravelWeever 地図上でスポットと移動ルートを確認する画面"
+          <img src="images/image1.png" alt="TravelWeever 旅程プラン生成画面のスクリーンショット"
+            class="tw-slide absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700" />
+          <img src="images/image2.png" alt="TravelWeever 地図上でスポットと移動ルートを確認する画面"
             class="tw-slide absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700"
-            loading="lazy"
-          />
+            loading="lazy" />
         </div>
 
         <!-- controls -->
-        <button
-          type="button"
-          aria-label="前へ"
-          class="tw-prev absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white p-2 shadow border"
-        >
+        <button type="button" aria-label="前へ"
+          class="tw-prev absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white p-2 shadow border">
           ‹
         </button>
-        <button
-          type="button"
-          aria-label="次へ"
-          class="tw-next absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white p-2 shadow border"
-        >
+        <button type="button" aria-label="次へ"
+          class="tw-next absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/80 hover:bg-white p-2 shadow border">
           ›
         </button>
 
         <!-- indicators -->
         <div class="tw-dots absolute -bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          <button
-            class="tw-dot h-2.5 w-2.5 rounded-full bg-slate-300 aria-[current=true]:bg-brand-600"
-            aria-current="true"
-            aria-label="1枚目へ"
-          ></button>
-          <button
-            class="tw-dot h-2.5 w-2.5 rounded-full bg-slate-300 aria-[current=true]:bg-brand-600"
-            aria-label="2枚目へ"
-          ></button>
+          <button class="tw-dot h-2.5 w-2.5 rounded-full bg-slate-300 aria-[current=true]:bg-brand-600"
+            aria-current="true" aria-label="1枚目へ"></button>
+          <button class="tw-dot h-2.5 w-2.5 rounded-full bg-slate-300 aria-[current=true]:bg-brand-600"
+            aria-label="2枚目へ"></button>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Trust / badges -->
-  <section class="bg-slate-50 border-y">
-    <div class="mx-auto max-w-7xl px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-xs text-slate-500">
-      <div class="rounded-lg border bg-white p-4">Nuxt 3 + Tailwind</div>
-      <div class="rounded-lg border bg-white p-4">Supabase Auth / DB</div>
-      <div class="rounded-lg border bg-white p-4">MapLibre / ルート探索</div>
-      <div class="rounded-lg border bg-white p-4">保存・共有対応</div>
     </div>
   </section>
 
   <!-- Features -->
   <section id="features" class="py-16 md:py-24">
     <div class="mx-auto max-w-7xl px-4">
-      <h2 class="text-2xl md:text-3xl font-bold">主な機能</h2>
-      <p class="mt-2 text-slate-600">直感的な検索と地図体験。初めての都市でも迷いにくい旅程を提案します。</p>
+      <h2 class="text-2xl md:text-3xl font-bold">「旅程自動作成」ツールとしてできる事</h2>
+      <p class="mt-2 text-slate-600">
+        保存されたプランをそのまま地図とタイムラインで表示します。
+        旅行中もスマホで開くだけ。
+      </p>
 
       <div class="mt-10 grid md:grid-cols-3 gap-6">
         <div class="rounded-2xl border p-6 hover:shadow-sm">
-          <h3 class="font-semibold">検索フォーム</h3>
+          <h3 class="font-semibold">検索フォームから自動生成</h3>
           <p class="mt-2 text-sm text-slate-600">
-            行き先・日付・予算・人数を入力するだけ。フライト条件や並び替えにも対応予定。
+            行き先・日付・人数・予算などを入れるだけで、滞在時間や移動コストも考慮した旅程を自動生成します。
+            <br />詳細検索ではより細かい条件指定も可能です。
           </p>
         </div>
 
         <div class="rounded-2xl border p-6 hover:shadow-sm">
-          <h3 class="font-semibold">地図表示</h3>
+          <h3 class="font-semibold">複数都市ルートにも対応</h3>
           <p class="mt-2 text-sm text-slate-600">
-            MapLibre で旅程を可視化。観光スポット・ホテル・移動経路と所要時間を一目で確認。
+            「ウィーン→プラハ→ブダペスト」のような周遊旅行もOK。
+            各日の滞在都市と長距離移動日を自動で割り当て。
           </p>
         </div>
 
         <div class="rounded-2xl border p-6 hover:shadow-sm">
-          <h3 class="font-semibold">旅程の保存・共有</h3>
+          <h3 class="font-semibold">スポットの自動ピックアップ</h3>
           <p class="mt-2 text-sm text-slate-600">
-            作成したプランを保存し、URL を友だち・家族と共有できます。
+            検索地点周辺の観光スポットを自動で抽出し、プランの候補となります。
+            <br />proプランでは、人気度やレビュー評価も考慮した観光スポットの抽出が可能です。
           </p>
         </div>
 
         <div class="rounded-2xl border p-6 hover:shadow-sm">
-          <h3 class="font-semibold">ホテル連携（予定）</h3>
+          <h3 class="font-semibold">レストラン・カフェ候補</h3>
           <p class="mt-2 text-sm text-slate-600">
-            提携サイトへのリンクで宿泊予約やフライト予約の導線をシームレスに提供。
+            食事時間帯に合わせて、周辺の飲食スポットを差し込みます。
+            <br />昼と夜のブロックを自動で確保するので、「気づいたらご飯の時間がない」が起きにくい構成です。
           </p>
         </div>
 
         <div class="rounded-2xl border p-6 hover:shadow-sm">
-          <h3 class="font-semibold">モバイル最適化</h3>
+          <h3 class="font-semibold">ホテルと移動手段の整合性</h3>
           <p class="mt-2 text-sm text-slate-600">
-            スマホでも軽快に操作。旅行中の確認もスムーズ。
+            宿泊候補はエリアと価格帯から抽出し、滞在拠点として日中の観光ルートの起点・終点に組み込みます。
+            <br />移動手段も徒歩・公共交通機関・車を考慮して、無理のないプランを作成します。
           </p>
         </div>
 
         <div class="rounded-2xl border p-6 hover:shadow-sm">
-          <h3 class="font-semibold">プライバシー配慮</h3>
+          <h3 class="font-semibold">保存・共有・再読込</h3>
           <p class="mt-2 text-sm text-slate-600">
-            必要最小限のデータ収集で安心して使えます。
+            生成したプランは保存され、固有の共有URLを発行できます。
+            他の人が同じリンクを開けば、地図つきの旅程をすぐに呼び出せます。
           </p>
         </div>
       </div>
@@ -325,54 +308,44 @@
         サンプル旅程：<span class="text-brand-600">東京 2泊3日モデルコース</span>
       </h2>
       <p class="mt-2 text-slate-600 text-sm md:text-base">
-        TravelWeever は、こんな感じの「観光スポット＋移動時間つきプラン」を自動生成します。
-        はじめての都市でも、人気スポットを無理なく回れる順番で提案します。
+        TravelWeever は、日ごと・時間ごとのタイムラインを自動で組みます。
+        観光スポットの滞在時間、移動手段、移動にかかる分数、
+        食事ブロックやホテルへの帰着までを1本の流れにします。
       </p>
 
       <div class="mt-8 grid gap-6 md:grid-cols-3 text-sm">
         <div class="rounded-2xl border bg-white p-6">
           <h3 class="font-semibold text-brand-700">1日目：浅草〜上野エリア</h3>
           <ul class="mt-2 text-slate-600 space-y-1">
-            <li>浅草・浅草寺で観光と食べ歩き</li>
+            <li>浅草寺と仲見世で観光＆食べ歩き</li>
             <li>スカイツリー周辺で写真スポット</li>
-            <li>上野公園と美術館・博物館エリア散策</li>
-            <li>上野で夕食・ホテルチェックイン</li>
+            <li>上野公園の博物館・美術館ゾーン</li>
+            <li>上野エリアで夕食 → ホテルチェックイン</li>
           </ul>
         </div>
 
         <div class="rounded-2xl border bg-white p-6">
           <h3 class="font-semibold text-brand-700">2日目：原宿〜渋谷〜新宿</h3>
           <ul class="mt-2 text-slate-600 space-y-1">
-            <li>明治神宮と原宿のカフェ</li>
+            <li>明治神宮からスタート</li>
+            <li>原宿カフェ＆ショッピング</li>
             <li>渋谷スクランブル交差点・センター街</li>
-            <li>新宿エリアで夕食＆夜景スポット</li>
-            <li>終電前にホテルへ戻るルートも自動考慮</li>
+            <li>夜は新宿で夜景＆ごはん</li>
           </ul>
         </div>
 
         <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-semibold text-brand-700">3日目：朝ごはんとおみやげ</h3>
+          <h3 class="font-semibold text-brand-700">3日目：朝ごはんと帰路</h3>
           <ul class="mt-2 text-slate-600 space-y-1">
-            <li>築地・豊洲エリアで朝ごはん</li>
+            <li>築地・豊洲で朝ごはん</li>
             <li>銀座・東京駅でおみやげ購入</li>
-            <li>空港 / 新幹線 までの移動時間も表示</li>
+            <li>空港 / 新幹線 までの移動時間もタイムラインに表示</li>
           </ul>
         </div>
       </div>
 
-      <div class="mt-6 text-center">
-        <a
-          href="https://app.travelweever.com"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-white bg-white shadow-sm"
-        >
-          このプランを編集する →
-        </a>
-      </div>
-
       <p class="mt-4 text-xs text-slate-500 text-center">
-        ※ 実際のプランは滞在エリアやホテル位置、移動手段（徒歩・電車など）から最適化されます。
+        ※ 実際のプランはホテルの場所・営業時間・移動時間を考慮して、無理な移動を避けるよう自動調整されます。
       </p>
     </div>
   </section>
@@ -384,29 +357,30 @@
       <ol class="mt-6 grid md:grid-cols-3 gap-6">
         <li class="rounded-2xl border bg-white p-6">
           <span
-            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold"
-          >1</span>
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">1</span>
           <h3 class="mt-3 font-semibold">条件を入力</h3>
           <p class="mt-1 text-sm text-slate-600">
-            行き先・日付・人数・予算、フライト条件などを入れるだけ。
+            行き先・日付・人数・予算を入力します。
+            「このスポットは必ず行きたい」「車は使わない」などの希望も指定できます。
           </p>
         </li>
         <li class="rounded-2xl border bg-white p-6">
           <span
-            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold"
-          >2</span>
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">2</span>
           <h3 class="mt-3 font-semibold">プランを生成</h3>
           <p class="mt-1 text-sm text-slate-600">
-            観光スポット・ホテル・移動を自動で最適化。地図と一緒に確認できます。
+            観光スポット・食事・ホテル・都市間の移動日までを自動で並べて、
+            1日ごとのタイムラインを作成します。
+            無料プランでも利用できます。
           </p>
         </li>
         <li class="rounded-2xl border bg-white p-6">
           <span
-            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold"
-          >3</span>
+            class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-brand-600 text-white font-bold">3</span>
           <h3 class="mt-3 font-semibold">保存・共有</h3>
           <p class="mt-1 text-sm text-slate-600">
-            URLで友だちに共有。旅行メンバー全員が同じ旅程を見られます。
+            生成した旅程はアカウントに保存できます。
+            共有リンクをメンバーに送れば、全員が同じマップとスケジュールを見られます。
           </p>
         </li>
       </ol>
@@ -418,26 +392,16 @@
     <div class="mx-auto max-w-4xl px-4 text-center">
       <h2 class="text-2xl md:text-3xl font-bold">今すぐ TravelWeever を試す</h2>
       <p class="mt-2 text-slate-600">
-        初期リリースでは「検索 → 旅程の保存 → 共有」までをスムーズに完走できる体験に注力しています。
+        現在はベータ版となります。
+        意図しない挙動や不具合がある可能性があります。
       </p>
+
       <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-        <a
-          href="https://app.travelweever.com"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700"
-        >デモを見る</a>
-        <a
-          href="https://app.travelweever.com"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          class="inline-flex items-center justify-center rounded-xl border px-6 py-3 font-semibold hover:bg-white bg-white shadow-sm"
-        >
-          アプリを開く
-        </a>
+        <a href="https://app.travelweever.com" target="_blank" rel="noopener noreferrer nofollow"
+          class="inline-flex items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700">無料で試す</a>
       </div>
       <p class="mt-4 text-xs text-slate-500">
-        ※ スクリーンショット / デモ動画は順次公開予定です。
+        ※ 一部の高精度スポット検索や混雑度・レビュー情報は Pro プランとして順次解放予定です。
       </p>
     </div>
   </section>
@@ -452,71 +416,43 @@
             無料で使えますか？
           </summary>
           <p class="mt-2 text-sm text-slate-600">
-            はい。現時点では無料でお試しいただけます。将来的に有料プランを導入する場合は事前にお知らせします。
+            はい。基本的な旅程生成・地図表示は無料プランでお試しいただけます。
+            人気スポットの高精度サジェストや、レビューを考慮した並び替えなど一部の機能は
+            Pro プランで提供予定です。
           </p>
         </details>
 
         <details class="rounded-xl border bg-white p-5">
           <summary class="cursor-pointer font-semibold">
-            どの地図を使っていますか？
+            複数の都市を回る旅行にも対応しますか？
           </summary>
           <p class="mt-2 text-sm text-slate-600">
-            MapLibre を使用し、ルート探索や所要時間の表示に対応します。
+            はい。都市ごとに日割りし、移動日には「A → Bへの移動」をタイムラインの先頭に入れます。
+            都市が切り替わったあとは、その日の滞在都市にあるスポット・食事・ホテルを中心に組みます。
           </p>
         </details>
 
         <details class="rounded-xl border bg-white p-5">
           <summary class="cursor-pointer font-semibold">
-            ログインしなくても使えますか？
+            共有リンクはどういう仕組みですか？
           </summary>
           <p class="mt-2 text-sm text-slate-600">
-            トップページからお試し利用が可能です。保存機能はログイン後にご利用ください。
+            旅程を保存すると固有のスラッグ（例: p_xxx123）が発行されます。
+            そのURLを開くと、メンバー全員が同じマップ・タイムラインを閲覧できます。
+            ログイン中のユーザーなら自分のプランとして再編集も可能です。
           </p>
         </details>
 
         <details class="rounded-xl border bg-white p-5">
           <summary class="cursor-pointer font-semibold">
-            ホテルやフライトの予約はできますか？
+            決済やサブスクはどうなりますか？
           </summary>
           <p class="mt-2 text-sm text-slate-600">
-            提携サイトへのリンクで予約導線を提供予定です。
+            有料プランは Stripe を使ったサブスクリプションで提供予定です。
+            解約しても、支払い期間が終わるまでは Pro 機能がそのまま使えるようになる予定です。
           </p>
         </details>
       </div>
-    </div>
-  </section>
-
-  <!-- Newsletter / lead capture -->
-  <section class="py-16">
-    <div class="mx-auto max-w-3xl px-4 text-center">
-      <h3 class="text-xl font-semibold">リリース情報を受け取る</h3>
-      <p class="mt-2 text-slate-600">
-        メールアドレスを登録すると、アップデート情報や招待をお届けします。
-      </p>
-      <form
-        class="mt-6 grid grid-cols-1 sm:grid-cols-[1fr_auto] gap-3 max-w-xl mx-auto"
-        action="#"
-        method="post"
-      >
-        <label class="sr-only" for="email">メールアドレス</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          required
-          placeholder="you@example.com"
-          class="w-full rounded-xl border px-4 py-3"
-        />
-        <button
-          type="submit"
-          class="rounded-xl bg-brand-600 px-6 py-3 text-white font-semibold hover:bg-brand-700"
-        >
-          登録
-        </button>
-      </form>
-      <p class="mt-3 text-xs text-slate-500">
-        スパムは送りません。解除はいつでも可能です。
-      </p>
     </div>
   </section>
 
@@ -525,10 +461,8 @@
     <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
       <div>
         <div class="flex items-center gap-2">
-          <span
-            class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold"
-            aria-hidden="true"
-          >TW</span>
+          <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold"
+            aria-hidden="true">TW</span>
           <span class="font-semibold">TravelWeever</span>
         </div>
         <p class="mt-3 text-slate-500">
@@ -617,4 +551,5 @@
     })();
   </script>
 </body>
+
 </html>
