@@ -5,10 +5,10 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- 🌍 LP -->
+  <!-- LP -->
   <url>
     <loc>https://www.travelweever.com/</loc>
-    <lastmod>2025-10-27T00:00:00+09:00</lastmod>
+    <lastmod>2025-11-15T00:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -27,7 +27,14 @@
     <priority>0.5</priority>
   </url>
 
-  <!-- 🚀 Webアプリ（公開リンクのみ） -->
+  <url>
+    <loc>https://www.travelweever.com/contact</loc>
+    <lastmod>2025-11-15T00:00:00+09:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Webアプリ -->
   <url>
     <loc>https://app.travelweever.com/</loc>
     <lastmod>2025-10-27T00:00:00+09:00</lastmod>
