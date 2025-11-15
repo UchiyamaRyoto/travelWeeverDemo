@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>お問い合わせ | TravelWeever（トラベルウィーヴァー）</title>
+  <meta name="description"
+    content="TravelWeever（トラベルウィーヴァー）に関するお問い合わせフォームです。サービス内容・ご意見・改善要望・不具合報告などお気軽にご連絡ください。" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.travelweever.com/contact.html" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TravelWeever | 旅のプランを自動作成する複数都市対応トラベルプランナー" />
+  <meta property="og:title" content="お問い合わせ | TravelWeever（トラベルウィーヴァー）" />
+  <meta property="og:description"
+    content="TravelWeever（トラベルウィーヴァー）へのお問い合わせページです。ご意見・改善要望・不具合報告など、どんな内容でもお気軽にご連絡ください。" />
+  <meta property="og:url" content="https://www.travelweever.com/contact.html" />
+  <meta property="og:image" content="https://www.travelweever.com/ogp.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="お問い合わせ | TravelWeever（トラベルウィーヴァー）" />
+  <meta name="twitter:description"
+    content="TravelWeever（トラベルウィーヴァー）へのお問い合わせページです。ご意見・改善要望・不具合報告など、どんな内容でもお気軽にご連絡ください。" />
+  <meta name="twitter:image" content="https://www.travelweever.com/ogp.jpg" />
+  <meta name="twitter:site" content="@travelweever" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Noto Sans JP"', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-slate-800 bg-slate-50">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+    <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <span
+          class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold"
+          aria-hidden="true"
+        >TW</span>
+        <span class="text-lg font-semibold">TravelWeever</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/" class="hover:text-brand-600">トップ</a>
+        <a href="/#features" class="hover:text-brand-600">特徴</a>
+        <a href="/#how" class="hover:text-brand-600">使い方</a>
+        <a href="/#sample" class="hover:text-brand-600">サンプル旅程</a>
+        <a href="/faq.html" class="hover:text-brand-600">FAQ</a>
+        <a href="/contact.html" class="text-brand-600 font-semibold">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="min-h-screen">
+    <section class="border-b bg-white">
+      <div class="mx-auto max-w-xl px-4 py-12">
+        <h1 class="text-2xl md:text-3xl font-bold">お問い合わせ</h1>
+        <p class="mt-3 text-sm md:text-base text-slate-600 leading-relaxed">
+          TravelWeever に関するご意見・ご質問・改善要望・不具合報告など<br />
+          どんな内容でもお気軽にご連絡ください。<br />
+          通常 3〜5 日以内を目安にご返信いたします。
+        </p>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="py-12">
+      <div class="mx-auto max-w-xl px-4">
+        <!-- フォーム送信先は後から差し替えOK -->
+        <form
+          action="https://formspree.io/f/mjkjwbde"
+          method="POST"
+          class="space-y-6 bg-white border rounded-xl p-6 shadow-sm"
+        >
+          <div>
+            <label class="block text-sm font-medium text-slate-700">お名前</label>
+            <input
+              type="text"
+              name="name"
+              required
+              class="mt-1 w-full rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-brand-300"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-slate-700">メールアドレス</label>
+            <input
+              type="email"
+              name="email"
+              required
+              class="mt-1 w-full rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-brand-300"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-slate-700">お問い合わせ内容</label>
+            <textarea
+              name="message"
+              rows="6"
+              required
+              class="mt-1 w-full rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-brand-300"
+              placeholder="例：改善要望、提携のご相談、不具合の状況など"
+            ></textarea>
+          </div>
+
+          <!-- 任意のカテゴリ入力 -->
+          <div>
+            <label class="block text-sm font-medium text-slate-700">カテゴリ（任意）</label>
+            <select
+              name="category"
+              class="mt-1 w-full rounded-md border px-3 py-2 text-sm focus:outline-none focus:ring focus:ring-brand-300"
+            >
+              <option value="">選択してください</option>
+              <option value="feedback">サービスへのご意見</option>
+              <option value="bug">不具合の報告</option>
+              <option value="business">ビジネス・提携のご相談</option>
+              <option value="question">質問</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full rounded-lg bg-brand-600 px-6 py-3 text-white font-semibold shadow hover:bg-brand-700"
+          >
+            送信する
+          </button>
+
+          <p class="text-xs text-slate-500">
+            ※ 送信ボタンを押すと入力内容が送信されます。  
+            ※ 送信された情報はお問い合わせ対応の目的以外では使用しません。
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
+      <div>
+        <div class="flex items-center gap-2">
+          <span
+            class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white font-bold"
+            aria-hidden="true"
+          >TW</span>
+          <span class="font-semibold">TravelWeever</span>
+        </div>
+        <p class="mt-3 text-slate-500">
+          旅の計画を、もっとかんたんに。
+        </p>
+      </div>
+
+      <nav class="grid gap-2">
+        <a href="/" class="hover:text-brand-600">トップ</a>
+        <a href="/#features" class="hover:text-brand-600">特徴</a>
+        <a href="/#how" class="hover:text-brand-600">使い方</a>
+        <a href="/#sample" class="hover:text-brand-600">サンプル旅程</a>
+        <a href="/faq.html" class="hover:text-brand-600">FAQ</a>
+        <a href="/contact.html" class="hover:text-brand-600">お問い合わせ</a>
+        <a href="/terms.html" class="hover:text-brand-600">利用規約</a>
+        <a href="/privacy.html" class="hover:text-brand-600">プライバシーポリシー</a>
+      </nav>
+
+      <div class="text-slate-500">
+        <p>© <span id="y"></span> TravelWeever</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
